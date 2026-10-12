@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "research_date": "2026-10-12",
+  "language": "zh-CN",
+  "scope": "Static source-based study of three agent harnesses across eight topics",
+  "topic_notes": 24,
+  "source_inventory_files": 40,
+  "primary_source_files": 39,
+  "supplementary_source_files": 1,
+  "source_inventory": "SOURCES.md",
+  "validation": {
+    "method": "Selected official source, documentation and test-file reading through the GitHub connector",
+    "upstream_builds_executed": false,
+    "upstream_tests_executed": false,
+    "real_model_calls_executed": false,
+    "benchmarks_executed": false,
+    "sandbox_security_tests_executed": false,
+    "experiments_status": "NOT RUN",
+    "entire_repositories_audited": false
+  },
+  "topics": [
+    {"id": "01", "slug": "agent-loop", "title": "Agent Loop / Execution Engine", "priority": "P0"},
+    {"id": "02", "slug": "context-session", "title": "Context / Session Management", "priority": "P0"},
+    {"id": "03", "slug": "tools-sandbox", "title": "Tool Execution / Sandbox", "priority": "P0"},
+    {"id": "04", "slug": "llm-streaming", "title": "LLM Integration / Streaming", "priority": "P0"},
+    {"id": "05", "slug": "extension-architecture", "title": "Extension / Plugin Architecture", "priority": "P1"},
+    {"id": "06", "slug": "task-orchestration", "title": "Task Orchestration / Multi-Agent", "priority": "P1"},
+    {"id": "07", "slug": "persistence-reliability", "title": "Persistence / Reliability", "priority": "P1"},
+    {"id": "08", "slug": "observability-evaluation", "title": "Observability / Evaluation", "priority": "P2"}
+  ],
+  "repositories": [
+    {
+      "id": "codex",
+      "repository": "openai/codex",
+      "url": "https://github.com/openai/codex",
+      "observed_branch": "main",
+      "commit": "a9b0815167c27ab13719dd12d13b63e02b70d221",
+      "notes_directory": "codex",
+      "source_inventory_ids": "C01-C12",
+      "release_equivalence_verified": false
+    },
+    {
+      "id": "opencode",
+      "repository": "anomalyco/opencode",
+      "url": "https://github.com/anomalyco/opencode",
+      "observed_branch": "dev",
+      "commit": "60a212c0769acd96b446acbadeb790486830f91d",
+      "notes_directory": "opencode",
+      "source_inventory_ids": "O01-O12",
+      "release_equivalence_verified": false
+    },
+    {
+      "id": "dsh",
+      "repository": "deepseek-ai/deepseek-harness",
+      "url": "https://github.com/deepseek-ai/deepseek-harness",
+      "observed_branch": "master",
+      "commit": "d743267388641bc76f17c45ce8b4c231aed1d32c",
+      "notes_directory": "dsh",
+      "source_inventory_ids": "D01-D16",
+      "release_equivalence_verified": false
+    }
+  ],
+  "notes": [
+    "Commit pins identify research snapshots, not recommended releases.",
+    "Source line ranges and truncated documentation reads are recorded in SOURCES.md.",
+    "The inventory has 39 primary files plus the DSH tool-execution-pipeline supplementary document.",
+    "Each note distinguishes source facts, documentation contracts, analysis and unexecuted experiments.",
+    "No private conversation, credentials, customer code or raw runtime traces are included."
+  ]
+}
