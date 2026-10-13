@@ -1,5 +1,7 @@
 # Agent Infrastructure 源码研究笔记
 
+系统学习请从新版 **[Agent 系统原理与工程实践](../agent-textbook/README.md)** 开始：28 章按知识依赖组织，涵盖原理、三项目源码、习题答案与本地实验。本目录保留 2026-10-12 初版的项目专题分析，以下阅读范围与未运行声明描述该初版。
+
 **Codex CLI × OpenCode × DeepSeek Harness（DSH）｜3 个项目 × 8 个专题**
 
 研究日期：2026-10-12。面向从平台工程走向 Agent Harness / Runtime / Infrastructure 的开发者。材料取自三个官方仓库的固定提交。

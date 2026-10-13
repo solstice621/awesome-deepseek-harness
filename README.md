@@ -33,6 +33,7 @@
 
 ## Contents
 
+- [Agent Study](#agent-study)
 - [Install](#install)
 - [Core](#core)
 - [Agents & Orchestration](#agents--orchestration)
@@ -51,6 +52,10 @@
 - [Science & Research](#science--research)
 - [Related](#related)
 - [Thanks](#thanks)
+
+## Agent Study
+
+**[Agent Systems: Principles and Engineering](docs/agent-textbook/README.md)** is a 28-chapter Chinese textbook with pinned Codex, OpenCode and DeepSeek Harness source comparisons, exercises with answers, and a runnable local lab. The original [24 source-study notes](docs/agent-infra-study/README.md) remain available for deeper reading.
 
 ## Install
 
