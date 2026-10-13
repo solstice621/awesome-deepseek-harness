@@ -1,0 +1,4038 @@
+{
+  "schema_version": 1,
+  "research_date": "2026-10-13",
+  "language": "zh-CN",
+  "scope": "28 chapter source-grounded curriculum; selected source reading, not a repository audit",
+  "chapter_count": 28,
+  "evidence_count": 382,
+  "source_file_count": 175,
+  "repositories": [
+    {
+      "id": "codex",
+      "repository": "openai/codex",
+      "commit": "a9b0815167c27ab13719dd12d13b63e02b70d221",
+      "source_directory": "codex-a9b0815167c27ab13719dd12d13b63e02b70d221"
+    },
+    {
+      "id": "opencode",
+      "repository": "anomalyco/opencode",
+      "commit": "60a212c0769acd96b446acbadeb790486830f91d",
+      "source_directory": "opencode-60a212c0769acd96b446acbadeb790486830f91d"
+    },
+    {
+      "id": "dsh",
+      "repository": "deepseek-ai/deepseek-harness",
+      "commit": "d743267388641bc76f17c45ce8b4c231aed1d32c",
+      "source_directory": "deepseek-harness-d743267388641bc76f17c45ce8b4c231aed1d32c"
+    }
+  ],
+  "evidence": "evidence.json",
+  "source_files": [
+    {
+      "project": "codex",
+      "path": "codex-rs/app-server/README.md",
+      "sha256": "d8e489c92adeb9d33bcbbcc5ff78431e839fdb2d6cefccb16812316bc22f5573",
+      "line_count": 618,
+      "read_ranges": [
+        [
+          22,
+          26
+        ],
+        [
+          113,
+          123
+        ]
+      ],
+      "chapters": [
+        "25-deployment-operations.md"
+      ],
+      "kinds": [
+        "doc"
+      ]
+    },
+    {
+      "project": "codex",
+      "path": "codex-rs/app-server/src/main.rs",
+      "sha256": "6c027c0307379f7426f25812e4422d5740ac6a128a28a51bcf79267516457ced",
+      "line_count": 167,
+      "read_ranges": [
+        [
+          30,
+          129
+        ]
+      ],
+      "chapters": [
+        "25-deployment-operations.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "codex",
+      "path": "codex-rs/app-server/src/request_processors/daemon_snapshot.rs",
+      "sha256": "a23e5cca1f19c0c8e84fb0d71a644558aa76a5778a07d09660e5c3cb4b2f358c",
+      "line_count": 56,
+      "read_ranges": [
+        [
+          15,
+          51
+        ]
+      ],
+      "chapters": [
+        "15-persistence-recovery.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "codex",
+      "path": "codex-rs/app-server/src/request_processors/thread_lifecycle.rs",
+      "sha256": "9878fc3f652ad2d916891de8c4c377c8290510e19a178b1951e1c520d77270eb",
+      "line_count": 1088,
+      "read_ranges": [
+        [
+          298,
+          329
+        ],
+        [
+          721,
+          745
+        ],
+        [
+          846,
+          871
+        ],
+        [
+          915,
+          937
+        ]
+      ],
+      "chapters": [
+        "16-events-ui-api.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "codex",
+      "path": "codex-rs/app-server/src/thread_state.rs",
+      "sha256": "cbdf09ad65d0c67e37ca78fbc4707d49031cb313619819d5344705cec2350002",
+      "line_count": 687,
+      "read_ranges": [
+        [
+          62,
+          75
+        ]
+      ],
+      "chapters": [
+        "16-events-ui-api.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "codex",
+      "path": "codex-rs/app-server/src/transport.rs",
+      "sha256": "5e88d3210a738216a1c8e1dd678a947a8991a486b729685e4089a6a36aa769c8",
+      "line_count": 247,
+      "read_ranges": [
+        [
+          68,
+          101
+        ],
+        [
+          140,
+          177
+        ]
+      ],
+      "chapters": [
+        "16-events-ui-api.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "codex",
+      "path": "codex-rs/app-server/tests/suite/v2/thread_goal_empty_responses.rs",
+      "sha256": "79b80bdc39a4c8bb021bd0120aaf181ba3f37716dbb5af9b3a2d614dbf1f27ad",
+      "line_count": 178,
+      "read_ranges": [
+        [
+          28,
+          86
+        ],
+        [
+          132,
+          176
+        ]
+      ],
+      "chapters": [
+        "24-testing-evaluation.md"
+      ],
+      "kinds": [
+        "test"
+      ]
+    },
+    {
+      "project": "codex",
+      "path": "codex-rs/codex-api/src/sse/responses.rs",
+      "sha256": "e58a41118359c01a107c1b18c8f94b0f124c560803c5bbb7e05435b6f08ce099",
+      "line_count": 2037,
+      "read_ranges": [
+        [
+          353,
+          375
+        ],
+        [
+          418,
+          455
+        ],
+        [
+          480,
+          491
+        ],
+        [
+          535,
+          570
+        ]
+      ],
+      "chapters": [
+        "08-model-streaming.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "codex",
+      "path": "codex-rs/config/src/loader/mod.rs",
+      "sha256": "f1d9c11bc0408da165edd405a148e7307fbf2e15569798597d218fda04f68ff0",
+      "line_count": 2050,
+      "read_ranges": [
+        [
+          123,
+          135
+        ]
+      ],
+      "chapters": [
+        "12-skills-configuration.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "codex",
+      "path": "codex-rs/core-plugins/src/loader.rs",
+      "sha256": "5e7134b8a50a72792420e3d2bc2d480bb219398a225d673fb3545bc68bfd27df",
+      "line_count": 1929,
+      "read_ranges": [
+        [
+          178,
+          189
+        ],
+        [
+          921,
+          976
+        ]
+      ],
+      "chapters": [
+        "20-mcp-plugins.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "codex",
+      "path": "codex-rs/core/src/agents_md.rs",
+      "sha256": "97427a870741b904a3f3c143f5990eaaa65b5bfa99ddac1808b2980052b5fc78",
+      "line_count": 562,
+      "read_ranges": [
+        [
+          7,
+          18
+        ],
+        [
+          42,
+          79
+        ],
+        [
+          56,
+          66
+        ]
+      ],
+      "chapters": [
+        "12-skills-configuration.md",
+        "19-injection-secrets.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "codex",
+      "path": "codex-rs/core/src/client.rs",
+      "sha256": "20e386c51e074b36f0c78d0f2b12d48ae003b7a51c30e4cb117c0195fba93c36",
+      "line_count": 3045,
+      "read_ranges": [
+        [
+          929,
+          947
+        ],
+        [
+          1022,
+          1048
+        ],
+        [
+          1067,
+          1084
+        ],
+        [
+          2332,
+          2370
+        ]
+      ],
+      "chapters": [
+        "02-model-interface.md",
+        "08-model-streaming.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "codex",
+      "path": "codex-rs/core/src/client_common.rs",
+      "sha256": "90707db241ea162fc464bbccbf87b08e143239b338b518a924275e6645bcaa63",
+      "line_count": 142,
+      "read_ranges": [
+        [
+          21,
+          54
+        ]
+      ],
+      "chapters": [
+        "02-model-interface.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "codex",
+      "path": "codex-rs/core/src/compact.rs",
+      "sha256": "fb897f7a1893b0d2c8edc7f9800c9243b52dceb8144e54a833056100361a5015",
+      "line_count": 866,
+      "read_ranges": [
+        [
+          79,
+          110
+        ],
+        [
+          323,
+          367
+        ],
+        [
+          383,
+          417
+        ]
+      ],
+      "chapters": [
+        "11-compaction.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "codex",
+      "path": "codex-rs/core/src/compact_token_budget.rs",
+      "sha256": "49682d338de201896ee122e36b16dc62072ce791c4acea52c7c0a6b615e6e20f",
+      "line_count": 69,
+      "read_ranges": [
+        [
+          16,
+          39
+        ],
+        [
+          48,
+          65
+        ]
+      ],
+      "chapters": [
+        "11-compaction.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "codex",
+      "path": "codex-rs/core/src/context/world_state/agents_md.rs",
+      "sha256": "32168af201a4605f2916dbbe2a3c394dc8cb6fb2fb5e76036b699d740ab178a3",
+      "line_count": 85,
+      "read_ranges": [
+        [
+          44,
+          79
+        ]
+      ],
+      "chapters": [
+        "12-skills-configuration.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "codex",
+      "path": "codex-rs/core/src/context_manager/history.rs",
+      "sha256": "0219f139d0d2d4f348f98468de551e899072f7e53af34b5b460a9ff6741e1051",
+      "line_count": 1400,
+      "read_ranges": [
+        [
+          91,
+          126
+        ]
+      ],
+      "chapters": [
+        "09-context-engineering.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "codex",
+      "path": "codex-rs/core/src/context_manager/normalize.rs",
+      "sha256": "4ac475b7a11159f5132baaf8fa4f126ec0254393963aac6150e6e2fb6c887edb",
+      "line_count": 436,
+      "read_ranges": [
+        [
+          46,
+          67
+        ]
+      ],
+      "chapters": [
+        "11-compaction.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "codex",
+      "path": "codex-rs/core/src/responses_retry.rs",
+      "sha256": "8136a44f54b593cd9257658b1798418567e1e26928dc0ad1b3edf748e2a181fd",
+      "line_count": 210,
+      "read_ranges": [
+        [
+          23,
+          24
+        ],
+        [
+          83,
+          175
+        ],
+        [
+          87,
+          118
+        ],
+        [
+          93,
+          117
+        ],
+        [
+          120,
+          175
+        ]
+      ],
+      "chapters": [
+        "08-model-streaming.md",
+        "14-retry-idempotency.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "codex",
+      "path": "codex-rs/core/src/session/context_window.rs",
+      "sha256": "9692f442771c63308cfc36954810cb2490d84c28b681972ea13b93afbd30050a",
+      "line_count": 130,
+      "read_ranges": [
+        [
+          53,
+          110
+        ]
+      ],
+      "chapters": [
+        "09-context-engineering.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "codex",
+      "path": "codex-rs/core/src/session/daemon_recovery.rs",
+      "sha256": "b80a999886b22c410aa406b3b5926489545e760299bc4bd319d2c478f75b1895",
+      "line_count": 56,
+      "read_ranges": [
+        [
+          1,
+          42
+        ]
+      ],
+      "chapters": [
+        "15-persistence-recovery.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "codex",
+      "path": "codex-rs/core/src/session/session.rs",
+      "sha256": "2c5ca54978a29b43451be1ccafd84d6ec2f1a1f634ebb1f724195c984d29f4b3",
+      "line_count": 1990,
+      "read_ranges": [
+        [
+          59,
+          100
+        ]
+      ],
+      "chapters": [
+        "03-runtime-architecture.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "codex",
+      "path": "codex-rs/core/src/session/turn.rs",
+      "sha256": "61bdcbc862681633b039e677f2b48069d6988c89bd78e11057d746ba0c0ba885",
+      "line_count": 3209,
+      "read_ranges": [
+        [
+          425,
+          447
+        ],
+        [
+          438,
+          541
+        ],
+        [
+          460,
+          506
+        ],
+        [
+          523,
+          541
+        ],
+        [
+          544,
+          575
+        ],
+        [
+          544,
+          590
+        ],
+        [
+          545,
+          574
+        ],
+        [
+          657,
+          705
+        ],
+        [
+          1031,
+          1043
+        ],
+        [
+          1707,
+          1732
+        ],
+        [
+          2461,
+          2488
+        ],
+        [
+          2776,
+          2790
+        ]
+      ],
+      "chapters": [
+        "01-agent-systems.md",
+        "04-agent-loop.md",
+        "05-planning-verification.md",
+        "08-model-streaming.md",
+        "13-concurrency-cancellation.md",
+        "19-injection-secrets.md",
+        "27-end-to-end-case.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "codex",
+      "path": "codex-rs/core/src/session/turn_context.rs",
+      "sha256": "ba94942f53da7c656af06a5a7c479ffb50862b85b0d5f4d5e034bac789888e63",
+      "line_count": 1489,
+      "read_ranges": [
+        [
+          321,
+          331
+        ],
+        [
+          321,
+          345
+        ]
+      ],
+      "chapters": [
+        "03-runtime-architecture.md",
+        "12-skills-configuration.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "codex",
+      "path": "codex-rs/core/src/tools/approvals.rs",
+      "sha256": "49f1d8320d042af0b5fe45f51b9400320a829277b4b47cba990cbc98a017164b",
+      "line_count": 820,
+      "read_ranges": [
+        [
+          220,
+          242
+        ]
+      ],
+      "chapters": [
+        "17-authority-approvals.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "codex",
+      "path": "codex-rs/core/src/tools/handlers/apply_patch.rs",
+      "sha256": "1256b2219f6acb9c49ae472860ee69d73c75bb427dcca4dae2a30018d30216c0",
+      "line_count": 590,
+      "read_ranges": [
+        [
+          83,
+          104
+        ],
+        [
+          317,
+          364
+        ]
+      ],
+      "chapters": [
+        "07-execution-environments.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "codex",
+      "path": "codex-rs/core/src/tools/handlers/multi_agents/spawn.rs",
+      "sha256": "cbcf674a2c0d5cc0e8b795cfcfdbb75a8f7d72f3b6e023db88bcf3c6ea631fee",
+      "line_count": 252,
+      "read_ranges": [
+        [
+          64,
+          112
+        ],
+        [
+          113,
+          139
+        ]
+      ],
+      "chapters": [
+        "21-multi-agent.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "codex",
+      "path": "codex-rs/core/src/tools/handlers/multi_agents/wait.rs",
+      "sha256": "51f07a8ce45180d5e7efc8b92a924969d9948350c7780326b70ab3f81b191221",
+      "line_count": 341,
+      "read_ranges": [
+        [
+          123,
+          219
+        ]
+      ],
+      "chapters": [
+        "21-multi-agent.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "codex",
+      "path": "codex-rs/core/src/tools/handlers/plan.rs",
+      "sha256": "f1e0acbe71dc6160ade7f4751f00c98f2d5e999d6c0954d015bf7709c382ce50",
+      "line_count": 112,
+      "read_ranges": [
+        [
+          65,
+          111
+        ]
+      ],
+      "chapters": [
+        "05-planning-verification.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "codex",
+      "path": "codex-rs/core/src/tools/handlers/plan_spec.rs",
+      "sha256": "ecbd36a78158967384269e1fb50f19991fd8f76c8d880cae536b5da105e0b197",
+      "line_count": 58,
+      "read_ranges": [
+        [
+          42,
+          55
+        ]
+      ],
+      "chapters": [
+        "05-planning-verification.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "codex",
+      "path": "codex-rs/core/src/tools/handlers/unified_exec/exec_command.rs",
+      "sha256": "de943c933a91cbfc8d241fc3f3e4ca1114c9d444f705f9c9bfe8d2752f73c318",
+      "line_count": 555,
+      "read_ranges": [
+        [
+          231,
+          248
+        ],
+        [
+          394,
+          457
+        ]
+      ],
+      "chapters": [
+        "06-tool-contracts.md",
+        "07-execution-environments.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "codex",
+      "path": "codex-rs/core/src/tools/handlers/unified_exec/write_stdin.rs",
+      "sha256": "015479a6d0823adc37c66feb2212f430d5cfb6954ffbacb707051faf1c5ae9cb",
+      "line_count": 160,
+      "read_ranges": [
+        [
+          97,
+          108
+        ],
+        [
+          144,
+          158
+        ]
+      ],
+      "chapters": [
+        "07-execution-environments.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "codex",
+      "path": "codex-rs/core/src/tools/handlers/view_image.rs",
+      "sha256": "788b24418a885ef75109a3b71de366119fa733f9e91c6f0de142d437835258db",
+      "line_count": 524,
+      "read_ranges": [
+        [
+          145,
+          186
+        ]
+      ],
+      "chapters": [
+        "07-execution-environments.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "codex",
+      "path": "codex-rs/core/src/tools/parallel.rs",
+      "sha256": "be06530c709b09c414df6ec4c8c6f26f117c319d144c8d52289327b3c71a6bb6",
+      "line_count": 883,
+      "read_ranges": [
+        [
+          45,
+          65
+        ],
+        [
+          202,
+          239
+        ],
+        [
+          239,
+          253
+        ],
+        [
+          258,
+          317
+        ]
+      ],
+      "chapters": [
+        "13-concurrency-cancellation.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "codex",
+      "path": "codex-rs/core/src/tools/registry.rs",
+      "sha256": "fc37acd056a78779aeeff497d30bcbba759ea55f469ae2c9e7b8f37f3aeb2dae",
+      "line_count": 970,
+      "read_ranges": [
+        [
+          214,
+          229
+        ],
+        [
+          683,
+          725
+        ],
+        [
+          846,
+          880
+        ]
+      ],
+      "chapters": [
+        "06-tool-contracts.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "codex",
+      "path": "codex-rs/core/src/tools/router.rs",
+      "sha256": "f97420f8a7b117563faad165ae7ad0d020545a2dfffbc46dbbfbdc5251fd939d",
+      "line_count": 440,
+      "read_ranges": [
+        [
+          257,
+          307
+        ],
+        [
+          359,
+          392
+        ]
+      ],
+      "chapters": [
+        "06-tool-contracts.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "codex",
+      "path": "codex-rs/core/src/tools/sandboxing.rs",
+      "sha256": "1ab6c27e34a93fe3857281e11e388eb3ae4b786819fbe15883ad7e1fb8b5473f",
+      "line_count": 578,
+      "read_ranges": [
+        [
+          66,
+          117
+        ],
+        [
+          234,
+          246
+        ],
+        [
+          249,
+          274
+        ]
+      ],
+      "chapters": [
+        "17-authority-approvals.md",
+        "18-sandbox-isolation.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "codex",
+      "path": "codex-rs/ext/extension-api/src/registry.rs",
+      "sha256": "f0d317b8978f4603b97013d6f29dad87def73b1d94cca9c4118d50d088ef5c2d",
+      "line_count": 298,
+      "read_ranges": [
+        [
+          112,
+          169
+        ]
+      ],
+      "chapters": [
+        "26-extension-design.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "codex",
+      "path": "codex-rs/ext/goal/src/accounting.rs",
+      "sha256": "eb1dda7a6fa71fc9461181ae31b2a3d4f9fbc46c18a9a6d8c44afd45eabfea82",
+      "line_count": 691,
+      "read_ranges": [
+        [
+          332,
+          357
+        ],
+        [
+          404,
+          450
+        ]
+      ],
+      "chapters": [
+        "22-long-running-goals.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "codex",
+      "path": "codex-rs/ext/goal/src/runtime.rs",
+      "sha256": "9fd31e79fd06f68e192b799631cfd544b8e685dd7aa4b98b96a02da9e8ff9ea8",
+      "line_count": 695,
+      "read_ranges": [
+        [
+          164,
+          188
+        ],
+        [
+          225,
+          253
+        ],
+        [
+          436,
+          479
+        ],
+        [
+          480,
+          516
+        ]
+      ],
+      "chapters": [
+        "22-long-running-goals.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "codex",
+      "path": "codex-rs/ext/goal/tests/accounting.rs",
+      "sha256": "f86301d7ea19427faaf5322c0a23ab49bf9ee2eab35ddc5bf80d1b03f9071d07",
+      "line_count": 286,
+      "read_ranges": [
+        [
+          19,
+          60
+        ],
+        [
+          135,
+          188
+        ]
+      ],
+      "chapters": [
+        "24-testing-evaluation.md"
+      ],
+      "kinds": [
+        "test"
+      ]
+    },
+    {
+      "project": "codex",
+      "path": "codex-rs/ext/memories/src/extension.rs",
+      "sha256": "d5f4e55a138a4479e9b6286bd08954a7438d2bfb516c5c8717626a2b38736873",
+      "line_count": 172,
+      "read_ranges": [
+        [
+          45,
+          52
+        ],
+        [
+          135,
+          158
+        ]
+      ],
+      "chapters": [
+        "10-retrieval-memory.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "codex",
+      "path": "codex-rs/ext/memories/src/local/search.rs",
+      "sha256": "e1c66711ad3ff5ac2ecc482f824a987ab86264bdb69ce859356a6330979b4f56",
+      "line_count": 336,
+      "read_ranges": [
+        [
+          67,
+          88
+        ],
+        [
+          130,
+          159
+        ]
+      ],
+      "chapters": [
+        "10-retrieval-memory.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "codex",
+      "path": "codex-rs/ext/skills/src/loader/discovery.rs",
+      "sha256": "c5c2901e47a52a30d6bf4cdea822cdcc0a05bd7f4e702ce27430e4ea06930494",
+      "line_count": 223,
+      "read_ranges": [
+        [
+          65,
+          98
+        ]
+      ],
+      "chapters": [
+        "12-skills-configuration.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "codex",
+      "path": "codex-rs/ext/skills/src/world_state.rs",
+      "sha256": "52d38027cb703be6ff41f00ba4907ac728d9f01aaf31f7fa9214414e3d9165b2",
+      "line_count": 237,
+      "read_ranges": [
+        [
+          39,
+          46
+        ],
+        [
+          113,
+          118
+        ]
+      ],
+      "chapters": [
+        "12-skills-configuration.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "codex",
+      "path": "codex-rs/memories/write/src/phase1.rs",
+      "sha256": "a50b7a27f932cd2f72b30bf0d351c0d14a592e9c37e5f19fe73ca73cfdb4f20c",
+      "line_count": 812,
+      "read_ranges": [
+        [
+          96,
+          145
+        ]
+      ],
+      "chapters": [
+        "10-retrieval-memory.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "codex",
+      "path": "codex-rs/memories/write/src/phase2.rs",
+      "sha256": "4bc9e3f3b4fbb4dc81f5d482b29244774c69d4560fd64bf26d189b63ad3e4b33",
+      "line_count": 613,
+      "read_ranges": [
+        [
+          60,
+          105
+        ],
+        [
+          109,
+          151
+        ],
+        [
+          299,
+          340
+        ]
+      ],
+      "chapters": [
+        "10-retrieval-memory.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "codex",
+      "path": "codex-rs/memories/write/src/start.rs",
+      "sha256": "5a95832c2e8e8e327377d62f94705bafd1102a2aa452552276ae2cfd24da9330",
+      "line_count": 94,
+      "read_ranges": [
+        [
+          20,
+          38
+        ],
+        [
+          59,
+          91
+        ]
+      ],
+      "chapters": [
+        "10-retrieval-memory.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "codex",
+      "path": "codex-rs/otel/src/events/session_telemetry.rs",
+      "sha256": "be39f9dcc60be5124bbf5118c6cc684a63497f000eaae212d32677c8ffb3aa84",
+      "line_count": 1458,
+      "read_ranges": [
+        [
+          293,
+          324
+        ],
+        [
+          381,
+          393
+        ],
+        [
+          395,
+          450
+        ],
+        [
+          637,
+          674
+        ],
+        [
+          1152,
+          1192
+        ]
+      ],
+      "chapters": [
+        "23-observability-performance.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "codex",
+      "path": "codex-rs/protocol/src/shell_environment.rs",
+      "sha256": "1f55f0f5319c1f0255f0f961523debef5cf7a8f34a75705a9b36e1b84dde591f",
+      "line_count": 337,
+      "read_ranges": [
+        [
+          138,
+          172
+        ]
+      ],
+      "chapters": [
+        "19-injection-secrets.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "codex",
+      "path": "codex-rs/rmcp-client/src/rmcp_client.rs",
+      "sha256": "ee576f4e0c40bbbc2814bb8b7bfb247cacec6ba8005466aab86e8ac799b18047",
+      "line_count": 1758,
+      "read_ranges": [
+        [
+          638,
+          684
+        ],
+        [
+          696,
+          713
+        ],
+        [
+          1061,
+          1075
+        ]
+      ],
+      "chapters": [
+        "20-mcp-plugins.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "codex",
+      "path": "codex-rs/sandboxing/src/manager.rs",
+      "sha256": "8abe2a5f66f8101a669dd0c1571fb7c5edbab9eff2e80c8d13d9064bc5bc175d",
+      "line_count": 833,
+      "read_ranges": [
+        [
+          50,
+          64
+        ],
+        [
+          313,
+          350
+        ],
+        [
+          355,
+          383
+        ]
+      ],
+      "chapters": [
+        "18-sandbox-isolation.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "codex",
+      "path": "codex-rs/skills/src/loading.rs",
+      "sha256": "731255be7976e46b7bb7c19103215731adaf0b7f2e0869f176651aa0b8fe0955",
+      "line_count": 120,
+      "read_ranges": [
+        [
+          39,
+          46
+        ]
+      ],
+      "chapters": [
+        "12-skills-configuration.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "codex",
+      "path": "codex-rs/thread-store/src/local/live_writer.rs",
+      "sha256": "68d2a59ac134e2d85e9c1393e8ee958091d11c1cd37606cba5f88fe176d55560",
+      "line_count": 384,
+      "read_ranges": [
+        [
+          155,
+          167
+        ]
+      ],
+      "chapters": [
+        "15-persistence-recovery.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "codex",
+      "path": "codex-rs/thread-store/src/store.rs",
+      "sha256": "503bbbd451f6930486f1f29c55d8c4008e6b5f823b31c6b168ba11920d0e4688",
+      "line_count": 581,
+      "read_ranges": [
+        [
+          176,
+          194
+        ]
+      ],
+      "chapters": [
+        "15-persistence-recovery.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "codex",
+      "path": "codex-rs/utils/redacted-string/src/lib.rs",
+      "sha256": "119b6a13a8ef0d77f4143bd557f34a0d3b2233bf34ec0f6ef2ad4c2430201160",
+      "line_count": 49,
+      "read_ranges": [
+        [
+          8,
+          24
+        ],
+        [
+          45,
+          48
+        ]
+      ],
+      "chapters": [
+        "19-injection-secrets.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "opencode",
+      "path": "packages/ai/src/protocols/open-responses.ts",
+      "sha256": "31215b4c56231588bc29b6607190c12fa95a0db14537cadd25f33a8b830e50b9",
+      "line_count": 1507,
+      "read_ranges": [
+        [
+          1236,
+          1266
+        ]
+      ],
+      "chapters": [
+        "08-model-streaming.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "opencode",
+      "path": "packages/ai/src/protocols/shared.ts",
+      "sha256": "b46c5d7c3c0710682b0a95feebb80d2002d4e137b502bdec520f38d8ef07aad9",
+      "line_count": 383,
+      "read_ranges": [
+        [
+          178,
+          185
+        ]
+      ],
+      "chapters": [
+        "08-model-streaming.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "opencode",
+      "path": "packages/ai/src/protocols/utils/tool-stream.ts",
+      "sha256": "6733016eb2fc26da8764dadcd507ef0d49a80f1ada57032665445b777d1a3ec9",
+      "line_count": 251,
+      "read_ranges": [
+        [
+          19,
+          98
+        ],
+        [
+          202,
+          231
+        ]
+      ],
+      "chapters": [
+        "08-model-streaming.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "opencode",
+      "path": "packages/ai/src/schema/events.ts",
+      "sha256": "f87f7f3365cb0d9400275aa21f61922fb63bbcc0a422b8e46257c47faf5a73f2",
+      "line_count": 742,
+      "read_ranges": [
+        [
+          23,
+          39
+        ]
+      ],
+      "chapters": [
+        "02-model-interface.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "opencode",
+      "path": "packages/ai/src/schema/messages.ts",
+      "sha256": "23ad9aebc503cb856f8166526e8d86f032b33cb605807851bb8d95ef597b614d",
+      "line_count": 450,
+      "read_ranges": [
+        [
+          385,
+          409
+        ]
+      ],
+      "chapters": [
+        "02-model-interface.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "opencode",
+      "path": "packages/ai/src/schema/options.ts",
+      "sha256": "8a5660245bc7513c1e370a841913569927f2e6787d447102628f3e88bad7e05a",
+      "line_count": 347,
+      "read_ranges": [
+        [
+          94,
+          103
+        ]
+      ],
+      "chapters": [
+        "02-model-interface.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "opencode",
+      "path": "packages/client/src/solid/connection.ts",
+      "sha256": "3b93c8ba83bd7b77bfb6901fa27d062f90e65007a8db0694731c0eab21c19d32",
+      "line_count": 277,
+      "read_ranges": [
+        [
+          32,
+          38
+        ],
+        [
+          84,
+          134
+        ],
+        [
+          147,
+          182
+        ]
+      ],
+      "chapters": [
+        "16-events-ui-api.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "opencode",
+      "path": "packages/client/src/solid/data.ts",
+      "sha256": "0d3d7a8906fc59f503b7e7f61fb4a5f036905ea99a4157c54b8756c129a3eca5",
+      "line_count": 1979,
+      "read_ranges": [
+        [
+          599,
+          632
+        ],
+        [
+          1965,
+          1973
+        ]
+      ],
+      "chapters": [
+        "16-events-ui-api.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "opencode",
+      "path": "packages/core/src/bus.ts",
+      "sha256": "1bf5e97b3c3618a79487d75adcfddc602d2068c7759d2018eb9ad7d08f4b57f9",
+      "line_count": 908,
+      "read_ranges": [
+        [
+          315,
+          378
+        ],
+        [
+          395,
+          443
+        ]
+      ],
+      "chapters": [
+        "15-persistence-recovery.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "opencode",
+      "path": "packages/core/src/config.ts",
+      "sha256": "515d7aa01e91565743367558726c9065c4b7639d1b516a8e6ab3019ec754bdd3",
+      "line_count": 375,
+      "read_ranges": [
+        [
+          22,
+          40
+        ]
+      ],
+      "chapters": [
+        "12-skills-configuration.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "opencode",
+      "path": "packages/core/src/config/plugin/instruction.ts",
+      "sha256": "7e42131bfe3e916061ccde2a599428def712e6c3921e7485250d0817689d8be2",
+      "line_count": 143,
+      "read_ranges": [
+        [
+          23,
+          55
+        ]
+      ],
+      "chapters": [
+        "12-skills-configuration.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "opencode",
+      "path": "packages/core/src/credential.ts",
+      "sha256": "c20bcc7e9a0d3c816e6ec1e7513ec3c2d03561c6bf43a86c6a82b6704b2cf84d",
+      "line_count": 328,
+      "read_ranges": [
+        [
+          30,
+          78
+        ]
+      ],
+      "chapters": [
+        "19-injection-secrets.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "opencode",
+      "path": "packages/core/src/environment/local.ts",
+      "sha256": "ff048c54f958dda370aee86d5c3a3236f82902633aef7e39588b514c1fd789ab",
+      "line_count": 103,
+      "read_ranges": [
+        [
+          17,
+          72
+        ]
+      ],
+      "chapters": [
+        "18-sandbox-isolation.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "opencode",
+      "path": "packages/core/src/environment/memory.ts",
+      "sha256": "2039f9ebeb8c53cea6a3ec114f3b08364fe9a2c0c3b87af41f6f977bc30eb9d5",
+      "line_count": 171,
+      "read_ranges": [
+        [
+          7,
+          18
+        ]
+      ],
+      "chapters": [
+        "10-retrieval-memory.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "opencode",
+      "path": "packages/core/src/event-logger.ts",
+      "sha256": "9d59ceb15e332b17bd7e006d8c3e315ef95c85ce31ebd6f42dba8dadee53b0b8",
+      "line_count": 19,
+      "read_ranges": [
+        [
+          7,
+          19
+        ]
+      ],
+      "chapters": [
+        "23-observability-performance.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "opencode",
+      "path": "packages/core/src/file-access.ts",
+      "sha256": "811ceafb0f9b2f89c169a5d1c1158311cfaca1e9ccb2c5140b486ddf6ba103e9",
+      "line_count": 167,
+      "read_ranges": [
+        [
+          93,
+          141
+        ]
+      ],
+      "chapters": [
+        "18-sandbox-isolation.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "opencode",
+      "path": "packages/core/src/instruction-discovery.ts",
+      "sha256": "ccea016383eb05eae8163d6c87d0836baff5054dd9bf17124516aa98d47bf369",
+      "line_count": 149,
+      "read_ranges": [
+        [
+          127,
+          147
+        ]
+      ],
+      "chapters": [
+        "12-skills-configuration.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "opencode",
+      "path": "packages/core/src/mcp/client.ts",
+      "sha256": "dcc33e7c06c18dbb65f299bf1c49529d05cad4f87198fcef5e81357f456ce19d",
+      "line_count": 418,
+      "read_ranges": [
+        [
+          246,
+          277
+        ],
+        [
+          294,
+          340
+        ]
+      ],
+      "chapters": [
+        "20-mcp-plugins.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "opencode",
+      "path": "packages/core/src/mcp/instructions.ts",
+      "sha256": "de3bfb753762057645110812ef8e0436eb54fe009c492e878e18cb3293c28ddf",
+      "line_count": 111,
+      "read_ranges": [
+        [
+          17,
+          29
+        ],
+        [
+          81,
+          105
+        ]
+      ],
+      "chapters": [
+        "19-injection-secrets.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "opencode",
+      "path": "packages/core/src/mcp/oauth.ts",
+      "sha256": "a232100ef3694e84b50e45b9585e1a6b4548119a6704e9808fcb4ed981a87a31",
+      "line_count": 532,
+      "read_ranges": [
+        [
+          166,
+          210
+        ],
+        [
+          352,
+          376
+        ]
+      ],
+      "chapters": [
+        "20-mcp-plugins.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "opencode",
+      "path": "packages/core/src/permission.ts",
+      "sha256": "d69278896f9a541dac7cf46056c859834d840ecc16ac57a639cbabc1afdda9a5",
+      "line_count": 347,
+      "read_ranges": [
+        [
+          87,
+          97
+        ],
+        [
+          158,
+          188
+        ],
+        [
+          231,
+          281
+        ]
+      ],
+      "chapters": [
+        "17-authority-approvals.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "opencode",
+      "path": "packages/core/src/persistent-pty/index.ts",
+      "sha256": "44b24a9e46d31eccb5010b62280ebb0bf37a97f0ab7b1eb280728e86d16068e5",
+      "line_count": 419,
+      "read_ranges": [
+        [
+          37,
+          114
+        ]
+      ],
+      "chapters": [
+        "07-execution-environments.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "opencode",
+      "path": "packages/core/src/plugin/plan.ts",
+      "sha256": "1cc8d0c1ca73c588ece2d3655b2e31c025bc2a38db0e440bf42b85317828f907",
+      "line_count": 120,
+      "read_ranges": [
+        [
+          14,
+          40
+        ],
+        [
+          55,
+          73
+        ]
+      ],
+      "chapters": [
+        "05-planning-verification.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "opencode",
+      "path": "packages/core/src/plugin/supervisor.ts",
+      "sha256": "7c5b72503909c8dfb20c75315d8f2b4101a48da81f64e2565a330f75afc06666",
+      "line_count": 268,
+      "read_ranges": [
+        [
+          59,
+          96
+        ],
+        [
+          124,
+          141
+        ]
+      ],
+      "chapters": [
+        "20-mcp-plugins.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "opencode",
+      "path": "packages/core/src/session/compaction.ts",
+      "sha256": "e386ce7bbe0ce2008c3bb1c1ed7c517b45cf93d475c5f26549601b550c15189a",
+      "line_count": 963,
+      "read_ranges": [
+        [
+          104,
+          151
+        ],
+        [
+          205,
+          239
+        ],
+        [
+          272,
+          309
+        ],
+        [
+          312,
+          322
+        ],
+        [
+          716,
+          737
+        ]
+      ],
+      "chapters": [
+        "11-compaction.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "opencode",
+      "path": "packages/core/src/session/context.ts",
+      "sha256": "33a609ca776dd4702179a343e7eb17c74166a7b3ede19e9d1b584536a8e76a50",
+      "line_count": 208,
+      "read_ranges": [
+        [
+          121,
+          179
+        ],
+        [
+          130,
+          179
+        ]
+      ],
+      "chapters": [
+        "09-context-engineering.md",
+        "10-retrieval-memory.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "opencode",
+      "path": "packages/core/src/session/execution.ts",
+      "sha256": "f86c35f46c9bae634f955328979c3eade27d5df06e115d677eece7f4e4f1ce3a",
+      "line_count": 195,
+      "read_ranges": [
+        [
+          17,
+          46
+        ],
+        [
+          76,
+          110
+        ],
+        [
+          76,
+          145
+        ],
+        [
+          76,
+          148
+        ],
+        [
+          87,
+          109
+        ],
+        [
+          111,
+          145
+        ],
+        [
+          150,
+          174
+        ]
+      ],
+      "chapters": [
+        "03-runtime-architecture.md",
+        "15-persistence-recovery.md",
+        "22-long-running-goals.md",
+        "27-end-to-end-case.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "opencode",
+      "path": "packages/core/src/session/execution/restart.ts",
+      "sha256": "4757779a499e5674de735956a5b68e26c01e747fa6b6f3d362320472efb378f5",
+      "line_count": 240,
+      "read_ranges": [
+        [
+          23,
+          33
+        ],
+        [
+          23,
+          61
+        ],
+        [
+          35,
+          61
+        ],
+        [
+          46,
+          61
+        ],
+        [
+          75,
+          98
+        ],
+        [
+          77,
+          98
+        ]
+      ],
+      "chapters": [
+        "14-retry-idempotency.md",
+        "15-persistence-recovery.md",
+        "22-long-running-goals.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "opencode",
+      "path": "packages/core/src/session/inbox.ts",
+      "sha256": "e849cf92dd802282cba7739f50c7702d4c4e9c31b8299ee9c10353d05d81024a",
+      "line_count": 550,
+      "read_ranges": [
+        [
+          154,
+          201
+        ]
+      ],
+      "chapters": [
+        "15-persistence-recovery.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "opencode",
+      "path": "packages/core/src/session/instructions.ts",
+      "sha256": "c93c18abe5055c90e3bf6fe09681bfe876c1ca210b13e66c1772154a6763584d",
+      "line_count": 125,
+      "read_ranges": [
+        [
+          35,
+          79
+        ],
+        [
+          99,
+          111
+        ]
+      ],
+      "chapters": [
+        "09-context-engineering.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "opencode",
+      "path": "packages/core/src/session/run-coordinator.ts",
+      "sha256": "20dc6417c597e6d5bc6f349e31ed5d3e88db4be31b548be1f35262e87fcc3c4b",
+      "line_count": 196,
+      "read_ranges": [
+        [
+          74,
+          119
+        ],
+        [
+          147,
+          195
+        ]
+      ],
+      "chapters": [
+        "13-concurrency-cancellation.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "opencode",
+      "path": "packages/core/src/session/runner/index.ts",
+      "sha256": "e6e5cb41914fbcf10e3071899117a84c8539f777c2c0e6013089e4ecf2948c40",
+      "line_count": 42,
+      "read_ranges": [
+        [
+          21,
+          39
+        ]
+      ],
+      "chapters": [
+        "03-runtime-architecture.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "opencode",
+      "path": "packages/core/src/session/runner/llm.ts",
+      "sha256": "9e0485919459faa9858622c4ab2939a53e43a77c3785ba339133dcf2043ad3b9",
+      "line_count": 375,
+      "read_ranges": [
+        [
+          188,
+          195
+        ],
+        [
+          205,
+          245
+        ],
+        [
+          223,
+          242
+        ],
+        [
+          223,
+          244
+        ],
+        [
+          270,
+          294
+        ],
+        [
+          270,
+          295
+        ]
+      ],
+      "chapters": [
+        "01-agent-systems.md",
+        "03-runtime-architecture.md",
+        "04-agent-loop.md",
+        "05-planning-verification.md",
+        "08-model-streaming.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "opencode",
+      "path": "packages/core/src/session/runner/retry.ts",
+      "sha256": "9d8e9df044f5c60990997bf507b2e831d6ddf163db6fd38cd1ee5142e5dd6868",
+      "line_count": 115,
+      "read_ranges": [
+        [
+          31,
+          90
+        ]
+      ],
+      "chapters": [
+        "14-retry-idempotency.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "opencode",
+      "path": "packages/core/src/session/runner/step.ts",
+      "sha256": "c4b7f1a5099216dace1ff65baa79c98203a523cdcfb216904ae41e0f403749c7",
+      "line_count": 325,
+      "read_ranges": [
+        [
+          90,
+          157
+        ],
+        [
+          95,
+          104
+        ],
+        [
+          107,
+          141
+        ],
+        [
+          107,
+          142
+        ],
+        [
+          144,
+          157
+        ],
+        [
+          184,
+          209
+        ],
+        [
+          211,
+          235
+        ],
+        [
+          220,
+          275
+        ],
+        [
+          231,
+          236
+        ],
+        [
+          267,
+          275
+        ],
+        [
+          277,
+          287
+        ]
+      ],
+      "chapters": [
+        "01-agent-systems.md",
+        "04-agent-loop.md",
+        "05-planning-verification.md",
+        "06-tool-contracts.md",
+        "08-model-streaming.md",
+        "13-concurrency-cancellation.md",
+        "14-retry-idempotency.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "opencode",
+      "path": "packages/core/src/session/subagent-completion.ts",
+      "sha256": "76fd1bc8cde61470d79aa5144c05d08537b32aa2fd75980b5067270e8d364b03",
+      "line_count": 46,
+      "read_ranges": [
+        [
+          21,
+          45
+        ]
+      ],
+      "chapters": [
+        "21-multi-agent.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "opencode",
+      "path": "packages/core/src/session/usage.ts",
+      "sha256": "5f1170254680925b75239302025e0e84e3c6ea4dcc84294b3e4e6072ceceaf8d",
+      "line_count": 56,
+      "read_ranges": [
+        [
+          8,
+          35
+        ]
+      ],
+      "chapters": [
+        "23-observability-performance.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "opencode",
+      "path": "packages/core/src/skill.ts",
+      "sha256": "f857d7ccf3fb770f3dc45c8bc0391c355f753f873ab9f2607a6c63eff03930d6",
+      "line_count": 133,
+      "read_ranges": [
+        [
+          33,
+          67
+        ]
+      ],
+      "chapters": [
+        "12-skills-configuration.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "opencode",
+      "path": "packages/core/src/tool.ts",
+      "sha256": "53d4b68ad8d7cf4ff4c88bf2c12ab028a0696fd5dfa41fa26951df55d633a2d4",
+      "line_count": 332,
+      "read_ranges": [
+        [
+          263,
+          283
+        ]
+      ],
+      "chapters": [
+        "06-tool-contracts.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "opencode",
+      "path": "packages/core/src/tool/plugin/edit.ts",
+      "sha256": "41f0186554058951a4e89d28f1c57f3652f532e21346394138e8e9c45f5a83a1",
+      "line_count": 230,
+      "read_ranges": [
+        [
+          149,
+          207
+        ]
+      ],
+      "chapters": [
+        "07-execution-environments.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "opencode",
+      "path": "packages/core/src/tool/plugin/grep.ts",
+      "sha256": "84e90a9d5c15e94fde38b56187bdf72394d1ca0dd6e07285a24232ed695b57e3",
+      "line_count": 170,
+      "read_ranges": [
+        [
+          43,
+          60
+        ],
+        [
+          82,
+          120
+        ]
+      ],
+      "chapters": [
+        "10-retrieval-memory.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "opencode",
+      "path": "packages/core/src/tool/plugin/shell.ts",
+      "sha256": "043dbf4b6c90a4ce2c44d7bbfb2bc62f8bfcc7b0f8f244286e5bc4f2328162ec",
+      "line_count": 293,
+      "read_ranges": [
+        [
+          24,
+          75
+        ],
+        [
+          117,
+          154
+        ],
+        [
+          123,
+          154
+        ],
+        [
+          157,
+          188
+        ]
+      ],
+      "chapters": [
+        "07-execution-environments.md",
+        "17-authority-approvals.md",
+        "18-sandbox-isolation.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "opencode",
+      "path": "packages/core/src/tool/plugin/skill.ts",
+      "sha256": "381075f59f9ae7eca429cc2dea0a309a9c04c147a2727516641522a2364c9d2e",
+      "line_count": 72,
+      "read_ranges": [
+        [
+          46,
+          65
+        ]
+      ],
+      "chapters": [
+        "12-skills-configuration.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "opencode",
+      "path": "packages/core/src/tool/plugin/subagent.ts",
+      "sha256": "fc6e821262ea17c26e63f2955e6fc1ad17475894701ec79d79494318204ad74b",
+      "line_count": 311,
+      "read_ranges": [
+        [
+          29,
+          62
+        ],
+        [
+          117,
+          167
+        ],
+        [
+          168,
+          198
+        ],
+        [
+          200,
+          240
+        ]
+      ],
+      "chapters": [
+        "21-multi-agent.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "opencode",
+      "path": "packages/core/src/tool/plugin/webfetch.ts",
+      "sha256": "6c3a07060f1b4576200e0a8f1f9fe1e0167cd503c10f3e4bfe964b4948dc5514",
+      "line_count": 189,
+      "read_ranges": [
+        [
+          67,
+          82
+        ],
+        [
+          117,
+          162
+        ]
+      ],
+      "chapters": [
+        "07-execution-environments.md",
+        "19-injection-secrets.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "opencode",
+      "path": "packages/core/src/tool/runtime.ts",
+      "sha256": "be44d90d4d784b45913b18b20186d9e0ff67a06b2c865e875b4b41c1f73b5bab",
+      "line_count": 281,
+      "read_ranges": [
+        [
+          29,
+          85
+        ],
+        [
+          110,
+          132
+        ]
+      ],
+      "chapters": [
+        "06-tool-contracts.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "opencode",
+      "path": "packages/core/src/worktree/git.ts",
+      "sha256": "2637708270ed1ff589f254b0b76c0249f4216fb959fe593e3c663a0fe417d1b3",
+      "line_count": 39,
+      "read_ranges": [
+        [
+          14,
+          36
+        ]
+      ],
+      "chapters": [
+        "07-execution-environments.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "opencode",
+      "path": "packages/core/test/session-run-coordinator.test.ts",
+      "sha256": "d0815af2adcf47e0e4d07619728bf2f197b5cdd3cfc27e5a5fd9691270e165b9",
+      "line_count": 686,
+      "read_ranges": [
+        [
+          9,
+          28
+        ],
+        [
+          161,
+          188
+        ]
+      ],
+      "chapters": [
+        "24-testing-evaluation.md"
+      ],
+      "kinds": [
+        "test"
+      ]
+    },
+    {
+      "project": "opencode",
+      "path": "packages/core/test/subagent-lifetime.test.ts",
+      "sha256": "0bbade29ba16b35f06466bd6908102059b9be302c08fd55ee39ba2a3e7ea52c7",
+      "line_count": 145,
+      "read_ranges": [
+        [
+          27,
+          53
+        ],
+        [
+          55,
+          140
+        ]
+      ],
+      "chapters": [
+        "24-testing-evaluation.md"
+      ],
+      "kinds": [
+        "test"
+      ]
+    },
+    {
+      "project": "opencode",
+      "path": "packages/plugin/README.md",
+      "sha256": "2f4545ab028969900d68461741ad69a7a09a86e9acf771689b8ae922779c3548",
+      "line_count": 18,
+      "read_ranges": [
+        [
+          10,
+          17
+        ]
+      ],
+      "chapters": [
+        "26-extension-design.md"
+      ],
+      "kinds": [
+        "doc"
+      ]
+    },
+    {
+      "project": "opencode",
+      "path": "packages/plugin/src/README.md",
+      "sha256": "0251a090a9ab2a2d6204490a30e6ec12757687c75fdb9d48e021f7a7c971c318",
+      "line_count": 176,
+      "read_ranges": [
+        [
+          12,
+          47
+        ],
+        [
+          126,
+          140
+        ]
+      ],
+      "chapters": [
+        "26-extension-design.md"
+      ],
+      "kinds": [
+        "doc"
+      ]
+    },
+    {
+      "project": "opencode",
+      "path": "packages/plugin/src/promise/adapter.ts",
+      "sha256": "dc437d2c545041701da7a0689c8d485794cfd6521f5633d26603b1a0f6f507a6",
+      "line_count": 631,
+      "read_ranges": [
+        [
+          469,
+          507
+        ]
+      ],
+      "chapters": [
+        "26-extension-design.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "opencode",
+      "path": "packages/schema/src/event.ts",
+      "sha256": "f39ab332fe69fcb85adeda95bcf4af608e13fc7e32d9dca5887fc35c51390fa9",
+      "line_count": 205,
+      "read_ranges": [
+        [
+          16,
+          35
+        ],
+        [
+          16,
+          78
+        ]
+      ],
+      "chapters": [
+        "16-events-ui-api.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "opencode",
+      "path": "packages/sdk/README.md",
+      "sha256": "046636d4dfb28a6bbe7a4f3263c4a6fdfae7eca000cec70b2eefa2b1586714fc",
+      "line_count": 143,
+      "read_ranges": [
+        [
+          1,
+          29
+        ],
+        [
+          61,
+          76
+        ]
+      ],
+      "chapters": [
+        "25-deployment-operations.md"
+      ],
+      "kinds": [
+        "doc"
+      ]
+    },
+    {
+      "project": "opencode",
+      "path": "packages/sdk/src/internal/host.ts",
+      "sha256": "7182e69193c74462ac604f85af24d16868140cee320f60ae81fe5afc1fbf8294",
+      "line_count": 73,
+      "read_ranges": [
+        [
+          30,
+          70
+        ]
+      ],
+      "chapters": [
+        "25-deployment-operations.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "opencode",
+      "path": "packages/server/src/event-feed.ts",
+      "sha256": "8867fb8ca3b1d7d667038ac1210a69a33b2cc264be0782d3e735e9bbf6eba568",
+      "line_count": 89,
+      "read_ranges": [
+        [
+          8,
+          21
+        ],
+        [
+          23,
+          38
+        ],
+        [
+          39,
+          80
+        ]
+      ],
+      "chapters": [
+        "16-events-ui-api.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "opencode",
+      "path": "packages/server/src/handlers/event.ts",
+      "sha256": "0d1c4a383a345100ffc4ef82ee5e3ed47c8e5d6fdd1fd2c3f55abe5c971bb5c6",
+      "line_count": 36,
+      "read_ranges": [
+        [
+          8,
+          35
+        ]
+      ],
+      "chapters": [
+        "16-events-ui-api.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "dsh",
+      "path": "docs/cordis-tutorial/07-into-the-harness.md",
+      "sha256": "a976bc37187dd9f150fc356e9aa971d0a621390095727c271204912583f4e32f",
+      "line_count": 108,
+      "read_ranges": [
+        [
+          7,
+          50
+        ],
+        [
+          50,
+          99
+        ]
+      ],
+      "chapters": [
+        "26-extension-design.md"
+      ],
+      "kinds": [
+        "doc"
+      ]
+    },
+    {
+      "project": "dsh",
+      "path": "docs/subsystems/web-server.md",
+      "sha256": "c9bc05a4ba45f9ba854be9741eab650b212ec2d5454423e7abbc69a70cc69e3c",
+      "line_count": 261,
+      "read_ranges": [
+        [
+          1,
+          27
+        ],
+        [
+          80,
+          86
+        ]
+      ],
+      "chapters": [
+        "25-deployment-operations.md"
+      ],
+      "kinds": [
+        "doc"
+      ]
+    },
+    {
+      "project": "dsh",
+      "path": "packages/api/session-controller/src/client/sessions/assistant-stream.ts",
+      "sha256": "6a5dd6365dc47f26e26cbb243af453c5ae441d08fe5133203e66a69ec15667fc",
+      "line_count": 229,
+      "read_ranges": [
+        [
+          52,
+          101
+        ],
+        [
+          109,
+          188
+        ]
+      ],
+      "chapters": [
+        "16-events-ui-api.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "dsh",
+      "path": "packages/api/session-controller/src/client/sessions/session.ts",
+      "sha256": "507260418c1d9666756fa43839bf15489d1114c0ea8da850f2be0869459538f5",
+      "line_count": 941,
+      "read_ranges": [
+        [
+          503,
+          518
+        ]
+      ],
+      "chapters": [
+        "16-events-ui-api.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "dsh",
+      "path": "packages/api/session-controller/src/history.ts",
+      "sha256": "20a2b002816817b04d7bae25e429034f79dbfa445ec2f7d90e4525a9c1652db8",
+      "line_count": 445,
+      "read_ranges": [
+        [
+          120,
+          203
+        ],
+        [
+          165,
+          203
+        ],
+        [
+          213,
+          232
+        ],
+        [
+          213,
+          240
+        ]
+      ],
+      "chapters": [
+        "16-events-ui-api.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "dsh",
+      "path": "packages/api/session-controller/src/index.ts",
+      "sha256": "a9af054df924c9111e289b3a66cd3e5fd16c2a190ee74be6071d16bd2809b6b5",
+      "line_count": 566,
+      "read_ranges": [
+        [
+          477,
+          498
+        ]
+      ],
+      "chapters": [
+        "16-events-ui-api.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "dsh",
+      "path": "packages/bundle/base/cordis.patch.yml",
+      "sha256": "8f62971fbbc0593d0963f98d00e7f680d3234ca59923512ee2593dd70aa6469b",
+      "line_count": 517,
+      "read_ranges": [
+        [
+          414,
+          416
+        ]
+      ],
+      "chapters": [
+        "15-persistence-recovery.md"
+      ],
+      "kinds": [
+        "doc"
+      ]
+    },
+    {
+      "project": "dsh",
+      "path": "packages/compaction/compaction-basic/src/index.ts",
+      "sha256": "c298756c1d06a24593dc573e08f337f7f012675bcfaa675edb7d5368b19649f6",
+      "line_count": 452,
+      "read_ranges": [
+        [
+          304,
+          345
+        ],
+        [
+          383,
+          414
+        ]
+      ],
+      "chapters": [
+        "11-compaction.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "dsh",
+      "path": "packages/compaction/compaction-basic/src/region.ts",
+      "sha256": "295b53cc9e924f7cb2e843e0d0d296e89ead73da2aab9790282db30736e2e063",
+      "line_count": 600,
+      "read_ranges": [
+        [
+          117,
+          154
+        ],
+        [
+          210,
+          239
+        ],
+        [
+          410,
+          420
+        ],
+        [
+          491,
+          509
+        ]
+      ],
+      "chapters": [
+        "11-compaction.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "dsh",
+      "path": "packages/context/agent-instructions/src/config.ts",
+      "sha256": "d589824236c8663b281cbf3358d1d7cb13dc5a76b1a1882d9086984d295d1a0c",
+      "line_count": 136,
+      "read_ranges": [
+        [
+          11,
+          34
+        ],
+        [
+          60,
+          79
+        ]
+      ],
+      "chapters": [
+        "12-skills-configuration.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "dsh",
+      "path": "packages/context/agent-instructions/src/index.ts",
+      "sha256": "175b773cd5b6fb8ac2af28857026fdaea9172495d1c7e32657aea9a9d34de5ab",
+      "line_count": 379,
+      "read_ranges": [
+        [
+          110,
+          155
+        ]
+      ],
+      "chapters": [
+        "09-context-engineering.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "dsh",
+      "path": "packages/core/agent-loop/src/agent.ts",
+      "sha256": "4add12f5c22bb1b8cf1dbc239c9b09fa3351feff2c936cb2b8900036468bd01b",
+      "line_count": 705,
+      "read_ranges": [
+        [
+          252,
+          264
+        ],
+        [
+          267,
+          287
+        ],
+        [
+          307,
+          365
+        ],
+        [
+          315,
+          328
+        ],
+        [
+          338,
+          365
+        ],
+        [
+          360,
+          366
+        ],
+        [
+          368,
+          397
+        ],
+        [
+          400,
+          460
+        ],
+        [
+          408,
+          441
+        ],
+        [
+          462,
+          503
+        ],
+        [
+          462,
+          526
+        ],
+        [
+          462,
+          527
+        ],
+        [
+          529,
+          555
+        ],
+        [
+          529,
+          559
+        ],
+        [
+          537,
+          555
+        ],
+        [
+          547,
+          555
+        ]
+      ],
+      "chapters": [
+        "01-agent-systems.md",
+        "04-agent-loop.md",
+        "05-planning-verification.md",
+        "08-model-streaming.md",
+        "14-retry-idempotency.md",
+        "27-end-to-end-case.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "dsh",
+      "path": "packages/core/agent-loop/src/tool-calls.ts",
+      "sha256": "5c7e8d8ff0028b436efdd13e5dffa4801d2311c211c3af039e7dab705f87b303",
+      "line_count": 290,
+      "read_ranges": [
+        [
+          83,
+          100
+        ],
+        [
+          132,
+          213
+        ],
+        [
+          146,
+          159
+        ],
+        [
+          216,
+          259
+        ]
+      ],
+      "chapters": [
+        "04-agent-loop.md",
+        "13-concurrency-cancellation.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "dsh",
+      "path": "packages/core/session/src/index.ts",
+      "sha256": "434e079558c804497cabee0fb73329843bfa4ceb1dce3e3d1b33c73469bdb2f4",
+      "line_count": 1452,
+      "read_ranges": [
+        [
+          522,
+          540
+        ],
+        [
+          761,
+          782
+        ],
+        [
+          798,
+          826
+        ],
+        [
+          1305,
+          1334
+        ]
+      ],
+      "chapters": [
+        "03-runtime-architecture.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "dsh",
+      "path": "packages/core/tools/src/index.ts",
+      "sha256": "e7209f5ba63fff439f1462249c6de77f7a1be060c62d9fe1aa67e5a6ecceb5b9",
+      "line_count": 1991,
+      "read_ranges": [
+        [
+          1397,
+          1458
+        ],
+        [
+          1499,
+          1543
+        ],
+        [
+          1555,
+          1597
+        ],
+        [
+          1837,
+          1867
+        ],
+        [
+          1963,
+          1987
+        ]
+      ],
+      "chapters": [
+        "06-tool-contracts.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "dsh",
+      "path": "packages/core/tools/src/schema.ts",
+      "sha256": "096f679e38626cc52536b8ecb9eef4c551c1a8a095c8e84f7a3b6156ee533653",
+      "line_count": 632,
+      "read_ranges": [
+        [
+          574,
+          615
+        ],
+        [
+          574,
+          616
+        ]
+      ],
+      "chapters": [
+        "06-tool-contracts.md",
+        "26-extension-design.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "dsh",
+      "path": "packages/credentials/credentials/src/index.ts",
+      "sha256": "76657cee0662455e8950204b2b6a7f07bc6bb7c142c754715ed78db7fe88731d",
+      "line_count": 307,
+      "read_ranges": [
+        [
+          175,
+          191
+        ]
+      ],
+      "chapters": [
+        "19-injection-secrets.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "dsh",
+      "path": "packages/experimental/browser-use-playwright-mcp/src/index.ts",
+      "sha256": "886ee8f590fc8d2a7146378749ea2455b32b02b4a3cb8009159c9b4040a4bf3c",
+      "line_count": 51,
+      "read_ranges": [
+        [
+          21,
+          50
+        ]
+      ],
+      "chapters": [
+        "07-execution-environments.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "dsh",
+      "path": "packages/experimental/browser-use-runtime/src/mcp.ts",
+      "sha256": "86d4e57e357fb7c87d49326344b8e3c2398fbccd29e34f6568db6fe3764fccc8",
+      "line_count": 220,
+      "read_ranges": [
+        [
+          128,
+          178
+        ],
+        [
+          196,
+          213
+        ]
+      ],
+      "chapters": [
+        "07-execution-environments.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "dsh",
+      "path": "packages/experimental/session-search/cordis.patch.yml",
+      "sha256": "a6eb3a40b4319396403e9cdbe503401b3785c5d3c066e58b4a931c0027dc7f35",
+      "line_count": 14,
+      "read_ranges": [
+        [
+          1,
+          14
+        ]
+      ],
+      "chapters": [
+        "10-retrieval-memory.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "dsh",
+      "path": "packages/experimental/tool-session-query/src/workspace-access.ts",
+      "sha256": "6f2f38689b945e86bf898ecd2063eeaa257c2aea27838f884fd1ee777f763e35",
+      "line_count": 257,
+      "read_ranges": [
+        [
+          75,
+          99
+        ]
+      ],
+      "chapters": [
+        "10-retrieval-memory.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "dsh",
+      "path": "packages/fs/tool-fs/src/edit.ts",
+      "sha256": "2602b2482f5234ab26cddf656cbe0020b53dc69a36bb8a835b57a55ed23a2055",
+      "line_count": 169,
+      "read_ranges": [
+        [
+          119,
+          147
+        ]
+      ],
+      "chapters": [
+        "07-execution-environments.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "dsh",
+      "path": "packages/goal/goal-round-driver/src/index.ts",
+      "sha256": "b59f61befcf8746327ec25b4a3812d44e243113da47cc323033806e8c65b6293",
+      "line_count": 460,
+      "read_ranges": [
+        [
+          96,
+          114
+        ],
+        [
+          137,
+          192
+        ],
+        [
+          207,
+          235
+        ]
+      ],
+      "chapters": [
+        "22-long-running-goals.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "dsh",
+      "path": "packages/goal/goal-round-driver/tests/goal-round-driver.spec.ts",
+      "sha256": "d1edf11f7df7f0827b17fb9c7fdd36e6180c3dd6a40531b85137f77dd4ecdf86",
+      "line_count": 1151,
+      "read_ranges": [
+        [
+          569,
+          614
+        ]
+      ],
+      "chapters": [
+        "24-testing-evaluation.md"
+      ],
+      "kinds": [
+        "test"
+      ]
+    },
+    {
+      "project": "dsh",
+      "path": "packages/goal/goal/src/types.ts",
+      "sha256": "a33a493854f86cfa1bb959d257e1d5b1237f1666dec617633a2af1fe28cd5719",
+      "line_count": 152,
+      "read_ranges": [
+        [
+          19,
+          72
+        ],
+        [
+          89,
+          115
+        ]
+      ],
+      "chapters": [
+        "22-long-running-goals.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "dsh",
+      "path": "packages/host/webserver/src/index.ts",
+      "sha256": "70c70ac5ba109b67d6fc88765edf32fe7af6d9444499a828f59d1667e33c18a7",
+      "line_count": 557,
+      "read_ranges": [
+        [
+          428,
+          446
+        ],
+        [
+          493,
+          507
+        ]
+      ],
+      "chapters": [
+        "25-deployment-operations.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "dsh",
+      "path": "packages/interaction/user-approval/src/index.ts",
+      "sha256": "6bba9feef5257063aa41d89ddd51c31a1a474b5920c256c65d5ec2857cff1ff6",
+      "line_count": 310,
+      "read_ranges": [
+        [
+          215,
+          233
+        ],
+        [
+          267,
+          305
+        ]
+      ],
+      "chapters": [
+        "17-authority-approvals.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "dsh",
+      "path": "packages/llm/llm-deepseek/src/adapter.ts",
+      "sha256": "3da7add8a973c648e630a0244e21cfdc65ac0d37c62d53219ebc328245e65a41",
+      "line_count": 164,
+      "read_ranges": [
+        [
+          51,
+          74
+        ],
+        [
+          124,
+          152
+        ]
+      ],
+      "chapters": [
+        "08-model-streaming.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "dsh",
+      "path": "packages/llm/llm-deepseek/src/replay.ts",
+      "sha256": "3edd01ffaedc422a148e1a66e8e93203ac07cb5aa558e35485501e564216f148",
+      "line_count": 64,
+      "read_ranges": [
+        [
+          17,
+          21
+        ]
+      ],
+      "chapters": [
+        "08-model-streaming.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "dsh",
+      "path": "packages/llm/llm-deepseek/src/sse.ts",
+      "sha256": "7ffcba377583018aa1a7f86c6d757b7dd6c1955ad8252103e2f33a4ceb90a741",
+      "line_count": 28,
+      "read_ranges": [
+        [
+          8,
+          27
+        ]
+      ],
+      "chapters": [
+        "08-model-streaming.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "dsh",
+      "path": "packages/llm/llm-deepseek/src/translate.ts",
+      "sha256": "254f4b8fe292dadc5c24df3375b01920f5e5b345be09eae4290e91e9e810c1ba",
+      "line_count": 166,
+      "read_ranges": [
+        [
+          82,
+          86
+        ],
+        [
+          121,
+          165
+        ]
+      ],
+      "chapters": [
+        "08-model-streaming.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "dsh",
+      "path": "packages/llm/llm-retry/src/index.ts",
+      "sha256": "d33553781ed2118aab3b249c159fae550d359627565e4714c9ea599e474b8093",
+      "line_count": 259,
+      "read_ranges": [
+        [
+          149,
+          191
+        ],
+        [
+          194,
+          258
+        ]
+      ],
+      "chapters": [
+        "14-retry-idempotency.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "dsh",
+      "path": "packages/llm/llm/src/assembler.ts",
+      "sha256": "a2d065645058a70195a504b101e9eed23df3eaced3def868d602f3a863b03887",
+      "line_count": 208,
+      "read_ranges": [
+        [
+          62,
+          92
+        ],
+        [
+          130,
+          149
+        ],
+        [
+          162,
+          179
+        ]
+      ],
+      "chapters": [
+        "08-model-streaming.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "dsh",
+      "path": "packages/llm/llm/src/message.ts",
+      "sha256": "5826fb32bc3d6e2221a7a39cc8b4fecc57282540a332417bb9f2ac3522b5c7da",
+      "line_count": 307,
+      "read_ranges": [
+        [
+          138,
+          179
+        ]
+      ],
+      "chapters": [
+        "02-model-interface.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "dsh",
+      "path": "packages/llm/llm/src/types.ts",
+      "sha256": "f807e8c051af974e3a963e3c0abd156d5504ea057c80228a07397ccc3bae1791",
+      "line_count": 553,
+      "read_ranges": [
+        [
+          61,
+          71
+        ],
+        [
+          167,
+          188
+        ],
+        [
+          510,
+          541
+        ]
+      ],
+      "chapters": [
+        "02-model-interface.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "dsh",
+      "path": "packages/llm/token-meter/src/route-pricing.ts",
+      "sha256": "4201c430b66e12fd40dcf264034bbc517cb73867f4b31a68b90c8a3ff3210840",
+      "line_count": 76,
+      "read_ranges": [
+        [
+          23,
+          75
+        ]
+      ],
+      "chapters": [
+        "09-context-engineering.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "dsh",
+      "path": "packages/mcp/mcp-client/src/connection.ts",
+      "sha256": "06dc1b3a1297b8b23f6ac5c44f3ba6740716c76db71c28cfb8f14d6c0340030e",
+      "line_count": 409,
+      "read_ranges": [
+        [
+          159,
+          196
+        ],
+        [
+          388,
+          406
+        ]
+      ],
+      "chapters": [
+        "20-mcp-plugins.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "dsh",
+      "path": "packages/mcp/mcp-client/src/index.ts",
+      "sha256": "f279bd88743ca73b0d9834915d1bb31e455e21c87f4990808cfd55b273db4d1c",
+      "line_count": 203,
+      "read_ranges": [
+        [
+          158,
+          201
+        ]
+      ],
+      "chapters": [
+        "20-mcp-plugins.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "dsh",
+      "path": "packages/mcp/mcp-client/src/server-context.ts",
+      "sha256": "02ca9fe759891788572385a00f0cc7b6e92d6e98e103c1d00dd99ccec0d6319a",
+      "line_count": 40,
+      "read_ranges": [
+        [
+          28,
+          38
+        ]
+      ],
+      "chapters": [
+        "19-injection-secrets.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "dsh",
+      "path": "packages/mcp/mcp-client/src/tools.ts",
+      "sha256": "59203150bda479a990afcdaf60483a35a836887926892e1074e02d0294c01af9",
+      "line_count": 511,
+      "read_ranges": [
+        [
+          119,
+          161
+        ]
+      ],
+      "chapters": [
+        "20-mcp-plugins.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "dsh",
+      "path": "packages/mcp/mcp-client/src/transport.ts",
+      "sha256": "6f3fca685af3d5654c476e95db24e1245dc1fa021a0bd7f477ce4ad997e1c8f6",
+      "line_count": 46,
+      "read_ranges": [
+        [
+          15,
+          44
+        ]
+      ],
+      "chapters": [
+        "20-mcp-plugins.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "dsh",
+      "path": "packages/sandbox/sandbox-local/src/index.ts",
+      "sha256": "282709d0bf789ad3ab9ec6a706f3aeaeac1632d80a08ded507a7b7caff860ac2",
+      "line_count": 583,
+      "read_ranges": [
+        [
+          151,
+          188
+        ],
+        [
+          497,
+          520
+        ]
+      ],
+      "chapters": [
+        "18-sandbox-isolation.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "dsh",
+      "path": "packages/sandbox/sandbox-local/src/profiles.ts",
+      "sha256": "b94dd0d0c49c8df63edcbdfe036fafb90eb0bb96e7613e73d46e27b009ae6aaa",
+      "line_count": 58,
+      "read_ranges": [
+        [
+          16,
+          57
+        ]
+      ],
+      "chapters": [
+        "18-sandbox-isolation.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "dsh",
+      "path": "packages/sandbox/sandbox-policy/src/index.ts",
+      "sha256": "6fce58e5bf63475f761871389bbf01043fba859f22e44c805522c39afbff32d6",
+      "line_count": 183,
+      "read_ranges": [
+        [
+          110,
+          117
+        ],
+        [
+          155,
+          170
+        ]
+      ],
+      "chapters": [
+        "18-sandbox-isolation.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "dsh",
+      "path": "packages/session-query/session-query-sqlite/src/schema.ts",
+      "sha256": "2cc4c7c8e50409847599a048922d55ef4ffbd1ac2309502f3a5a06420bc1a28f",
+      "line_count": 173,
+      "read_ranges": [
+        [
+          112,
+          137
+        ]
+      ],
+      "chapters": [
+        "10-retrieval-memory.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "dsh",
+      "path": "packages/session/session-checkpoint-policy/src/index.ts",
+      "sha256": "2b93aae29cfb0b5757656f4e2e54c21d2ab5c11c1bccaed014735ecb9685fe35",
+      "line_count": 83,
+      "read_ranges": [
+        [
+          29,
+          82
+        ]
+      ],
+      "chapters": [
+        "15-persistence-recovery.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "dsh",
+      "path": "packages/session/session-persistence-jsonl/src/index.ts",
+      "sha256": "7e967bc8815e656fd4ccb7686626de239df7b4499554f3b1a1145a167fc9aa47",
+      "line_count": 1735,
+      "read_ranges": [
+        [
+          638,
+          707
+        ],
+        [
+          1330,
+          1371
+        ]
+      ],
+      "chapters": [
+        "15-persistence-recovery.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "dsh",
+      "path": "packages/session/session-persistence-jsonl/src/storage.ts",
+      "sha256": "41d6e4af01d3f613eb9d4e89e3d8ddded5070b4e73c7b3f858a61cbbd3b43b33",
+      "line_count": 567,
+      "read_ranges": [
+        [
+          35,
+          36
+        ],
+        [
+          187,
+          211
+        ],
+        [
+          267,
+          312
+        ],
+        [
+          318,
+          342
+        ],
+        [
+          534,
+          546
+        ]
+      ],
+      "chapters": [
+        "15-persistence-recovery.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "dsh",
+      "path": "packages/session/session-persistence/src/handle.ts",
+      "sha256": "2fd8b5c5188ffdf5adee78a260b3dd0a9be97e5eb9fcdb5aafae5a8ed5471a31",
+      "line_count": 117,
+      "read_ranges": [
+        [
+          85,
+          116
+        ]
+      ],
+      "chapters": [
+        "15-persistence-recovery.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "dsh",
+      "path": "packages/session/session-persistence/src/index.ts",
+      "sha256": "d3da1fc3977e23eb5c2f73d6245a0d9c5967f9a0d755065e74ccd26e76794f14",
+      "line_count": 206,
+      "read_ranges": [
+        [
+          117,
+          135
+        ]
+      ],
+      "chapters": [
+        "10-retrieval-memory.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "dsh",
+      "path": "packages/session/session-persistence/tests/storage-contract.spec.ts",
+      "sha256": "09726bddef0e2b31fe104a719e44c88a9dc8584147ce81de8647f4a1c20a1f55",
+      "line_count": 322,
+      "read_ranges": [
+        [
+          47,
+          88
+        ],
+        [
+          121,
+          147
+        ]
+      ],
+      "chapters": [
+        "24-testing-evaluation.md"
+      ],
+      "kinds": [
+        "test"
+      ]
+    },
+    {
+      "project": "dsh",
+      "path": "packages/session/session-telemetry-otel/src/index.ts",
+      "sha256": "30d81ec2f07fbe1d9c620092cfa38f89ad5806bbf3d1ee562620955196f60185",
+      "line_count": 278,
+      "read_ranges": [
+        [
+          80,
+          107
+        ],
+        [
+          138,
+          150
+        ]
+      ],
+      "chapters": [
+        "23-observability-performance.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "dsh",
+      "path": "packages/session/session-telemetry/src/coordinator.ts",
+      "sha256": "95b54c800069ec144f66af8acaae30e07805d784abd4e21e22d584b68feae4ae",
+      "line_count": 305,
+      "read_ranges": [
+        [
+          47,
+          58
+        ],
+        [
+          104,
+          120
+        ],
+        [
+          179,
+          206
+        ],
+        [
+          179,
+          218
+        ],
+        [
+          197,
+          207
+        ],
+        [
+          241,
+          250
+        ]
+      ],
+      "chapters": [
+        "19-injection-secrets.md",
+        "23-observability-performance.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "dsh",
+      "path": "packages/session/working-directory/src/index.ts",
+      "sha256": "5d8b57ba56fe96f73713f66805342ca5690df50fb530b41846abc7d3d4447fbd",
+      "line_count": 225,
+      "read_ranges": [
+        [
+          81,
+          109
+        ],
+        [
+          154,
+          169
+        ]
+      ],
+      "chapters": [
+        "07-execution-environments.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "dsh",
+      "path": "packages/shell/bash-sandbox/src/index.ts",
+      "sha256": "45dec72853eb9ab2f40697b7618dd922eefc7d5a5c7eb427dcd590898ab1ad9f",
+      "line_count": 192,
+      "read_ranges": [
+        [
+          115,
+          130
+        ]
+      ],
+      "chapters": [
+        "18-sandbox-isolation.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "dsh",
+      "path": "packages/shell/tool-bash/src/index.ts",
+      "sha256": "5df46989afe583c719f0ba1b88bf09849d419cb56a45472ba86bf4358c207d0f",
+      "line_count": 555,
+      "read_ranges": [
+        [
+          202,
+          264
+        ],
+        [
+          222,
+          247
+        ],
+        [
+          295,
+          352
+        ],
+        [
+          477,
+          495
+        ]
+      ],
+      "chapters": [
+        "07-execution-environments.md",
+        "17-authority-approvals.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "dsh",
+      "path": "packages/skill/skill-filesystem/src/index.ts",
+      "sha256": "4be3a8f4142b27e07093cff1757876a80a344dd6f664a38775069244b89f4ec4",
+      "line_count": 1056,
+      "read_ranges": [
+        [
+          181,
+          224
+        ],
+        [
+          244,
+          263
+        ]
+      ],
+      "chapters": [
+        "12-skills-configuration.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "dsh",
+      "path": "packages/skill/skill/src/index.ts",
+      "sha256": "af4fad67fb086c3f5c93aed4604830718b4535e7e59a60d680404b07ea08477c",
+      "line_count": 868,
+      "read_ranges": [
+        [
+          48,
+          54
+        ],
+        [
+          76,
+          91
+        ]
+      ],
+      "chapters": [
+        "12-skills-configuration.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "dsh",
+      "path": "packages/subagent/subagent/src/depth.ts",
+      "sha256": "52fe8c33e3becc3c5925ce4c63cfa097dc67158207e50db4622c7b9c15bc9b6f",
+      "line_count": 51,
+      "read_ranges": [
+        [
+          18,
+          35
+        ]
+      ],
+      "chapters": [
+        "21-multi-agent.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "dsh",
+      "path": "packages/subagent/subagent/src/manager.ts",
+      "sha256": "9ba766d51031fe30d8c67e07ddba163b109c405a5f0830d484992c6372bdcc43",
+      "line_count": 1475,
+      "read_ranges": [
+        [
+          379,
+          456
+        ],
+        [
+          537,
+          575
+        ]
+      ],
+      "chapters": [
+        "21-multi-agent.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "dsh",
+      "path": "packages/subagent/subagent/src/structured.ts",
+      "sha256": "04ed062bd322c39207f564fc092dcc157500d2fa5c08f5cecab2d3b7053bb4b2",
+      "line_count": 155,
+      "read_ranges": [
+        [
+          94,
+          105
+        ],
+        [
+          115,
+          153
+        ]
+      ],
+      "chapters": [
+        "21-multi-agent.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    },
+    {
+      "project": "dsh",
+      "path": "packages/todo/tool-todo/src/index.ts",
+      "sha256": "74eed074d1b056cc0a029f9b8343bc9337c14f04696c528daaedcbebe9842a17",
+      "line_count": 212,
+      "read_ranges": [
+        [
+          80,
+          99
+        ],
+        [
+          117,
+          134
+        ],
+        [
+          192,
+          208
+        ]
+      ],
+      "chapters": [
+        "05-planning-verification.md"
+      ],
+      "kinds": [
+        "code"
+      ]
+    }
+  ],
+  "validation": {
+    "upstream_builds_executed": false,
+    "upstream_tests_executed": false,
+    "real_model_calls_executed": false,
+    "upstream_benchmarks_executed": false,
+    "sandbox_security_tests_executed": false,
+    "teaching_lab_results": "VALIDATION.md"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-13",
+  "scope": "offline pedagogical lab only; no upstream project tests or model API requests",
+  "environment": {
+    "python": "3.12.8",
+    "platform": "Darwin arm64",
+    "sqlite": "3.45.3"
+  },
+  "commands_from_repository_root": [
+    "python3 -m unittest discover -s docs/agent-textbook/labs -p 'test_*.py' -v",
+    "python3 docs/agent-textbook/labs/agent_lab.py demo --approve-edit --events",
+    "python3 docs/agent-textbook/labs/agent_lab.py evaluate"
+  ],
+  "unittest": {"tests": 23, "passed": 23, "failed": 0},
+  "process_crash_tests": {"before_commit": "passed", "after_commit": "passed", "injected_exit_code": 86},
+  "demo": {"status": "completed", "total": "43.00", "spent": 4, "decisions": 5, "effects": 1},
+  "fixture_evaluation": {"cases": 5, "baseline_passed": 2, "scripted_workflow_passed": 5},
+  "limitations": [
+    "The scripted model already knows the repair plan.",
+    "All tested side effects are inside one SQLite database.",
+    "Process-crash tests are not power-loss or external-tool exactly-once tests.",
+    "Only single-worker execution is supported.",
+    "Only fixed synthetic CSV fixtures are evaluated."
+  ]
+}

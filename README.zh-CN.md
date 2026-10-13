@@ -32,6 +32,7 @@
 
 ## Contents
 
+- [Agent Study](#agent-study)
 - [Install](#install)
 - [Core](#core)
 - [Agents & Orchestration](#agents--orchestration)
@@ -50,6 +51,10 @@
 - [Related](#related)
 - [Science & Research](#science--research)
 - [Thanks](#thanks)
+
+## Agent Study
+
+系统学习资料：**[Agent 系统原理与工程实践](docs/agent-textbook/README.md)**，从原理到工程的 28 章中文教材，包含 Codex、OpenCode、DeepSeek Harness 固定源码对照、练习答案与可运行本地实验。原有 [24 篇源码专题笔记](docs/agent-infra-study/README.md)可作为深入阅读材料。
 
 ## Install
 
